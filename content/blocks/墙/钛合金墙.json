@@ -1,0 +1,10 @@
+{
+	"name": "钛合金墙",
+	"description": "保护己方建筑，挡下敌人炮弹。\n可以放置在深水上。",
+	"type": "Wall",
+	"placeableLiquid": true,
+	"size": 1, "scaledHealth":1400,"armor":9,
+	"requirements": ["钛合金/8","surge-alloy/4"],
+	"category": "defense",
+	"research": "装甲墙"
+}

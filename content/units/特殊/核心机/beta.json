@@ -1,0 +1,26 @@
+{
+    "details": "使用新型护甲，无惧牵引装置，装载的新型连发机枪，使它的自保能力进一步提升。",
+    "health": 210,"armor":0.5,
+    "mineTier": 2,
+    "speed": 3.7,"rotateSpeed": 18,
+    "faceTarget": false,
+    "weapons": [{
+            "name": "beta1",
+            "reload": 15.5,
+            "x": 2.8,"y": 1,
+            "rotate": true,
+            "rotateSpeed": 9,
+            "inaccuracy": 0,
+            "shoot": {"shots": 2,"shotDelay": 2.7},
+            "shootSound": "pew",
+            "alternate": true,
+            "ejectEffect": "casing1",
+            "bullet": {
+                "buildingDamageMultiplier": 0.02,
+                "homingRange": 32,
+                "homingPower": 0.01,
+                "damage": 12,
+                "speed": 4,
+                "lifetime": 55,
+                "width": 7,
+                "height": 10}}]}

@@ -1,0 +1,22 @@
+{
+	"type": "LightBlock",
+	"name": "水晶探照灯",
+	"description":"利用晶栅通电时可以发光特性制成的探照灯，比普通灯范围更大，亮度更高。",
+	"details":"“伊格莱特的夜晚并没有月亮，一旦落日便漆黑无比，而它是你在漫漫长夜中的最佳选择。”\n“据说它由mkrd的晶栅手电筒改进而来”",
+	"size": 1,
+	"health": 180,
+	"brightness": 0.88,
+	"radius": 220,
+	"buildCostMultiplier": 0.5,
+	"consumes": {
+		"power": 0.125
+	},
+	"requirements": [
+		"lead/20",
+		"silicon/12",
+		"晶栅/10"
+	],
+	"category": "effect",
+	"research": "illuminator",
+	"buildVisibility": "lightingOnly"
+}

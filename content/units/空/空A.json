@@ -1,0 +1,120 @@
+{
+    "type": "flying",
+    "name": "拂晓",
+    "description": "发射穿甲火焰柱，穿透敌人与建筑并引起火灾。",
+    "speed": 3.85,
+    "drag": 0.08,
+    "accel": 0.12,
+    "rotateSpeed": 12,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 1600
+    },
+    "ammoCapacity": 40,
+    "hitSize": 10,
+    "flying": true,
+    "faceTarget": true,
+    "health": 95,
+    "lightRadius": 40,
+    "fogRadius": 18,
+    "engineOffset": 5.25,
+    "engineSize": 2.4,
+    "itemCapacity": 0,
+    "immunities": [
+        "burning",
+        "corroded"
+    ],
+    "research": {
+        "parent": "陆星A",
+        "requirements": [
+            "silicon/800",
+            "graphite/600"
+        ]
+    },
+    "requirements": {
+        "block": "air-factory",
+        "time": 900,
+        "requirements": [
+            "silicon/25",
+            "graphite/15"
+        ]
+    },
+    "weapons": [
+        {
+            "name": "拂晓激光",
+            "x": 0,
+            "y": 0,
+            "shootY": 1.75,
+            "reload": 150,
+            "alwaysContinuous": true,
+            "continuous": true,
+            "rotate": false,
+            "mirror": false,
+            "shootSound": "beam",
+            "bullet": {
+                "type": "ContinuousFlameBulletType",
+                "colors": [
+                    "6783bf78",
+                    "8aa1d196",
+                    "b9c7f0b4",
+                    "d3ddf5d2",
+                    "e6ebf5f0"
+                ],
+                "lightColor": "b9c7f0",
+                "flareColor": "b9c7f0",
+                "length": 128,
+                "width": 2,
+                "statusDuration": 270,
+                "status": "burning",
+                "damage": 4.5,
+                "damageInterval": 6,
+                "pierceCap": 3,
+                "incendAmount": 1,
+                "incendSpread": 24,
+                "incendChance": 0.08,
+                "makeFire": true,
+                "divisions": 6,
+                "shootEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 4,
+                    "sizeFrom": 3.3,
+                    "sizeTo": 0,
+                    "interp": "pow10Out",
+                    "sizeInterp": "pow5In",
+                    "length": 88,
+                    "baseLength": 0,
+                    "lifetime": 32,
+                    "colorFrom": "ffffff",
+                    "colorTo": "b9c7f0",
+                    "cone": 13
+                },
+                "smokeEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 2,
+                    "line": true,
+                    "strokeFrom": 1.3,
+                    "strokeTo": 0,
+                    "lenFrom": 18,
+                    "lenTo": 8,
+                    "length": 88,
+                    "baseLength": 0,
+                    "lifetime": 16,
+                    "colorFrom": "ffffff",
+                    "colorTo": "b9c7f0",
+                    "cone": 16
+                },
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "lifetime": 20,
+                    "sizeFrom": 2,
+                    "sizeTo": 0,
+                    "interp": "pow3Out",
+                    "sizeInterp": "pow3In",
+                    "colorFrom": "ffffff",
+                    "colorTo": "b9c7f0"
+                }
+            }
+        }
+    ]
+}

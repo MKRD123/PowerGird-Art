@@ -1,0 +1,19 @@
+{
+	"type": "Conveyor",
+	"name": "栅格传送带",
+	"description":"向前方快速传输物品。\n可以放置在深水上。",
+	"details":"安全第一！",
+	"health": 220,
+	"armor":2,
+	"buildCostMultiplier":0.6,
+	"placeableLiquid": true,
+	"requirements": [
+		"copper/2",
+		"titanium/2",
+		"晶栅/1"
+	],
+	"category": "distribution",
+	"research":"箱子",
+	"speed": 0.2,
+	"displayedSpeed": 20
+}

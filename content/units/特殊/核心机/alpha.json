@@ -1,0 +1,19 @@
+{
+	"details":"重铸Dart荣光！",
+	"health": 180,
+	"speed":3.3,"rotateSpeed": 16,
+	"weapons":[{
+		"name": "alpha1",	
+		"reload": 12.5, 
+		"x": 2.5,"y": 1.5, 
+		"rotate": false,
+		"inaccuracy": 0,
+		"shootSound": "pew",
+		"alternate": true,
+		"ejectEffect":"casing1",
+		"bullet":{
+        "buildingDamageMultiplier":0.02,
+		"damage":11,	  
+		"speed":3.2,
+		"lifetime":56,
+		"width":7,"height":10}}]}

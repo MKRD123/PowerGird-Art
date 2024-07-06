@@ -1,0 +1,21 @@
+{
+    "name": "急修",
+    "details": "[lime]纳米机器！小子！",
+    "healthMultiplier": 1.2,
+    "damage": -7,
+    "effectChance": 0.15,
+    "effect": {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "baseLength": 0,
+        "length": 16,
+        "lifetime": 19,
+        "layer": 110,
+        "sizeInterp": "fastSlow",
+        "sizeFrom": 3.2,
+        "sizeTo": 0,
+        "colorFrom": "97ffa8",
+        "colorTo": "87ffa8a8",
+        "cone": 360
+    }
+}

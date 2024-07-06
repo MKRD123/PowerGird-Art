@@ -1,0 +1,8 @@
+{
+    "name":"强袭",
+    "healthMultiplier":1.6,
+	"speedMultiplier":0.75,
+	"damageMultiplier":1.8,
+	"effectChance":0.3,
+	"effect":"none"
+}

@@ -1,0 +1,84 @@
+{
+    "type": "PowerTurret",
+    "category": "turret",
+    "name": "光栅",
+    "description": "瞬间进行再次充能使晶栅发光，并聚焦为激光对敌人造成严重损伤。",
+    "details": "电网：蚌不住了啊啊啊啊",
+    "health": 375,
+    "size": 1,
+    "minWarmup": 0.88,
+    "shootWarmupSpeed": 0.058,
+    "warmupMaintainTime": 45,
+    "reload": 155,
+    "rotateSpeed": 7.5,
+    "range": 126,
+    "targetAir": true,
+    "targetGround": true,
+    "shootSound": "laser",
+    "shake": 2,
+    "inaccuracy": 0,
+    "recoil": 2,
+    "recoilTime": 25,
+    "shootY":1.5,
+    "consumes": {
+        "power": 4.5,
+        "coolant": {
+            "amount": 0.1,
+            "optional": true
+        }
+    },
+    "coolantMultiplier": 12.5,
+    "drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-左",
+                "under": true,
+                "recoilIndex": 0,
+                "moves": [
+                    {
+                        "progress": "warmup",
+                        "x": -0.75,
+                        "y": -0.75
+                    }
+                ],
+                "heatProgress": "recoil"
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-右",
+                "under": true,
+                "recoilIndex": 1,
+                "moves": [
+                    {
+                        "progress": "warmup",
+                        "x": 0.75,
+                        "y": -0.75
+                    }
+                ],
+                "heatProgress": "recoil"
+            }
+        ]
+    },
+    "shoot": {
+        "shots": 3,
+        "shotDelay": 4
+    },
+    "shootType": {
+        "type": "LaserBulletType",
+        "despawnEffect": "none",
+        "damage": 43,
+        "buildingDamageMultiplier": 0.3,
+        "ammoMultiplier": 1,
+        "width": 9,
+        "length": 128,
+        "lifetime": 17
+    },
+    "research": "追迹",
+    "requirements": [
+        "lead/50",
+        "silicon/55",
+        "晶栅/25"
+    ]
+}

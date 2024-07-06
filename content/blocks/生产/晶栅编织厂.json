@@ -1,0 +1,43 @@
+{
+	"type": "GenericCrafter",
+	"name": "晶栅编织厂",
+	"description": "得益于高级绝缘材料与超压导体的应用，晶栅的制造变得更加容易。",
+	"outputItems": [
+		"晶栅/1"
+	],
+	"health": 580,
+	"size": 3,
+	"itemCapacity": 30,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 30,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			"DrawPlasma",
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"updateEffect": "none",
+	"consumes": {
+		"power": 16.66666667,
+		"items": {
+			"items": [
+				"metaglass/2"
+			]
+		}
+	},
+	"requirements": [
+		"lead/200",
+		"silicon/150",
+		"晶栅/90",
+		"plastanium/40"
+	],
+	"category": "crafting",
+	"research": "晶栅编织器"
+}

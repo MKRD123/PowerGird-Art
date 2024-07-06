@@ -1,0 +1,19 @@
+{
+	"name": "晶栅",
+	"description": "内部结构为栅格状的水晶，可以储存能量。\n拥有多种用途。",
+	"details": "这种新奇物品的属性出乎了我们的意料，它将影响着整个科技树的发展走向。\n“压电晶体也不能这么猛啊”",
+	"cost": 0.5,
+	"color": "a8baf2",
+	"hardness": 5,
+	"healthScaling": 0.2,
+	"radioactivity": 0,
+	"explosiveness": 0.2,
+	"flammability": 0,
+	"charge": 0.4,
+	"alwaysUnlocked": true,
+	"research": {
+		"root": true,
+		"name": "伊格莱特",
+		"planet": "伊格莱特"
+	}
+}

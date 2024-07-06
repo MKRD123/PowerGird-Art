@@ -1,0 +1,83 @@
+{
+    "type": "PowerTurret",
+    "name": "长空",
+    "description": "向远距离的空中敌人发射能量爆破弹。",
+    "details": "“长风破浪会有时，直挂云帆济沧海！”",
+    "targetAir": true,
+    "targetGround": false,
+    "health": 880,
+    "size": 2,
+    "shootSound": "laser",
+    "shake": 2,
+    "inaccuracy": 0,
+    "shootY": 0,
+    "recoil": 2,
+    "recoilTime": 20,
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 36,
+        "splashDamage": 82,
+        "splashDamageRadius": 35,
+        "speed": 20,
+        "lifetime": 18,
+        "hitSize": 8,
+        "pierce": true,
+        "pierceCap": 3,
+        "collidesGround": false,
+        "frontColor": "FFFFFF",
+        "backColor": "b9c7f0bc",
+        "width": 8,
+        "height": 27,
+        "trailLength": 54,
+        "trailWidth": 2,
+        "trailColor": "b9c7f0aa",
+        "shrinkY": 0,
+        "despawnEffect": "none",
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 9,
+                    "sizeInterp": "pow5In",
+                    "sizeFrom": 3,
+                    "sizeTo": 0,
+                    "length": 16,
+                    "baseLength": 16,
+                    "lifetime": 14,
+                    "colorFrom": "ffffff",
+                    "colorTo": "b9c7f0bc"
+                },
+                {
+                    "type": "WaveEffect",
+                    "lifetime": 12,
+                    "sizeFrom": 2,
+                    "sizeTo": 35,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "colorFrom": "ffffff",
+                    "colorTo": "b9c7f0bc"
+                }
+            ]
+        },
+        "ammoMultiplier": 1
+    },
+    "consumes": {
+        "power": 6.6,
+        "coolant": {
+            "amount": 0.2,
+            "optional": true
+        }
+    },
+    "reload": 47,
+    "rotateSpeed": 9,
+    "range": 336,
+    "category": "turret",
+    "research": "光栅",
+    "requirements": [
+        "lead/100",
+        "silicon/80",
+        "titanium/60",
+        "晶栅/45"
+    ]
+}

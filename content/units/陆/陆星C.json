@@ -1,0 +1,228 @@
+{
+	"type": "mech",
+	"name": "星环",
+	"description": "向远距离的敌人发射追踪导弹。\n能够助推，拥有环形护盾。",
+	"details": "星环是“陆星”系列最早设计的单位，但第一台原型机的诞生晚于“原子”与“星尘”。虽然造价相比同级来说高了许多，但她的长射程足以对付大多数单位。",
+	"canBoost": true,
+	"immunities": [
+		"burning",
+		"wet",
+		"spore-slowed",
+		"corroded"
+	],
+	"dpsEstimate": 196.63,
+	"speed": 0.77,
+	"hitSize": 14,
+	"health": 720,
+	"armor": 8,
+	"engineOffset": 4.75,
+	"engineSize": 4,
+	"lightRadius": 56,
+	"fogRadius": 32.5,
+	"buildRange": 260,
+	"maxRange": 260,
+	"mineRange": 80,
+	"mineSpeed": 6,
+	"mineTier": 3,
+	"buildSpeed": 1.5,
+	"rotateSpeed": 6,
+	"itemCapacity": 80,
+	"boostMultiplier": 2.88,
+	"research": {
+		"parent": "陆星B",
+		"requirements": [
+			"silicon/6000",
+			"titanium/2500",
+			"晶栅/1000"
+		]
+	},
+	"requirements": {
+		"block": "TierC特种重构厂",
+		"previous": "陆星B"
+	},
+	"drownTimeMultiplier": 2,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 8000
+	},
+	"ammoCapacity": 80,
+	"weapons": [
+		{
+			"y": 2.75,
+			"x": -8.5,
+			"top": false,
+			"name": "星环L",
+			"shake": 1.4,
+			"shootY": 3,
+			"shootX": 0,
+			"reload": 41.5,
+			"inaccuracy": 10,
+			"ejectEffect": "casing3",
+			"shootSound": "missile",
+			"mirror": false,
+			"bullet": {
+				"type": "MissileBulletType",
+				"hitSize": 7.2,
+				"speed": 5,
+				"lifetime": 52,
+				"damage": 28,
+				"splashDamageRadius": 29,
+				"splashDamage": 40,
+				"homingPower": 0.08,
+				"homingRange": 48,
+				"status": "扰频",
+				"statusDuration": 480,
+				"backColor": "b9c7f0",
+				"frontColor": "ffffff",
+				"trailColor": "b9c7f0",
+				"collidesTiles": true,
+				"collides": true,
+				"width": 7,
+				"height": 11,
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 5,
+							"sizeInterp": "pow3In",
+							"sizeFrom": 5,
+							"sizeTo": 0,
+							"length": 26,
+							"baseLength": 3,
+							"lifetime": 27,
+							"colorFrom": "ffffff90",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 6,
+							"sizeInterp": "pow3In",
+							"sizeFrom": 4,
+							"sizeTo": 0,
+							"length": 28,
+							"baseLength": 2,
+							"lifetime": 27,
+							"colorFrom": "ffffff90",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 20,
+							"sizeFrom": 2,
+							"sizeTo": 29,
+							"strokeFrom": 3,
+							"strokeTo": 0,
+							"colorFrom": "ffffff",
+							"colorTo": "b9c7f0bc"
+						}
+					]
+				}
+			}
+		},
+		{
+			"y": 2.75,
+			"x": 8.5,
+			"top": false,
+			"name": "星环R",
+			"shake": 1.4,
+			"shootY": 3,
+			"shootX": 0,
+			"reload": 166,
+			"inaccuracy": 0,
+			"shoot": {
+				"type": "ShootHelix",
+				"shotDelay": 4,
+				"shots": 2,
+				"scl": 2.75,
+				"mag": 1.8
+			},
+			"ejectEffect": "casing2",
+			"shootSound": "missile",
+			"mirror": false,
+			"bullet": {
+				"type": "MissileBulletType",
+				"hitSize": 7.2,
+				"speed": 5,
+				"lifetime": 52,
+				"damage": 28,
+				"splashDamageRadius": 29,
+				"splashDamage": 40,
+				"homingPower": 0.08,
+				"homingRange": 48,
+				"status": "扰频",
+				"statusDuration": 480,
+				"backColor": "b9c7f0",
+				"frontColor": "ffffff",
+				"trailColor": "b9c7f0",
+				"collidesTiles": true,
+				"collides": true,
+				"width": 7,
+				"height": 11,
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 5,
+							"sizeInterp": "pow3In",
+							"sizeFrom": 5,
+							"sizeTo": 0,
+							"length": 26,
+							"baseLength": 3,
+							"lifetime": 27,
+							"colorFrom": "ffffff90",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 6,
+							"sizeInterp": "pow3In",
+							"sizeFrom": 4,
+							"sizeTo": 0,
+							"length": 28,
+							"baseLength": 2,
+							"lifetime": 27,
+							"colorFrom": "ffffff90",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 20,
+							"sizeFrom": 2,
+							"sizeTo": 29,
+							"strokeFrom": 3,
+							"strokeTo": 0,
+							"colorFrom": "ffffff",
+							"colorTo": "b9c7f0bc"
+						}
+					]
+				}
+			}
+		}
+	],
+	"abilities": [
+		{
+			"type": "ShieldArcAbility",
+			"radius": 24,
+			"angle": 361,
+			"width": 3.6,
+			"max": 120,
+			"regen": 0.3,
+			"cooldown": 450,
+			"angleOffset": 0,
+			"whenShooting": "false"
+		},
+		{
+			"type": "ShieldArcAbility",
+			"radius": 32,
+			"angle": 361,
+			"width": 3.6,
+			"max": 120,
+			"regen": 0.3,
+			"cooldown": 450,
+			"angleOffset": 0,
+			"whenShooting": "false"
+		}
+	]
+}

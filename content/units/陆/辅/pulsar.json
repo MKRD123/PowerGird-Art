@@ -1,0 +1,48 @@
+{
+    "details": "加厚型装甲，电弧发生器电压提升",
+    "health": 380,
+    "range": 70,
+    "weapons": [
+        {
+            "name": "恒星1",
+            "reload": 38,
+            "shootY": 6,
+            "x": 6,
+            "y": 0,
+            "inaccuracy": 30,
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 0.1
+            },
+            "shake": 2.2,
+            "recoil": 2.5,
+            "top": false,
+            "shootSound": "spark",
+            "alternate": true,
+            "bullet": {
+                "type": "LightningBulletType",
+                "damage": 15,
+                "lightningColor": "97FFA8",
+                "hitColor": "97FFA8",
+                "lightningLength": 8,
+                "lightningLengthRand": 7,
+                "shootEffect": "shootHeal",
+                "smokeEffect": "none",
+                "healPercent": 2.5,
+                "lightningType": {
+                    "width": 0,
+                    "height": 0,
+                    "hitSize": 5,
+                    "lifetime": 1,
+                    "speed": 0,
+                    "collidesTeam": true,
+                    "hittable": false,
+                    "hitEffect": "hitLancer",
+                    "despawnEffect": "none",
+                    "status": "shocked",
+                    "healPercent": 2.5
+                }
+            }
+        }
+    ]
+}

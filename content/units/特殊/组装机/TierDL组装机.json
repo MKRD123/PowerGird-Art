@@ -1,0 +1,37 @@
+{
+    "type": "tether",
+    "name": "组装无人机",
+    "description": "由“黎阳”改造而来的组装无人机，拆除武器并安装了更先进的引擎与建造系统，能够自动建造一价精英单位。",
+    "defaultController": "AssemblerAI",
+    "payloadCapacity": 0,
+    "useUnitCap": true,
+    "isEnemy": false,
+    "hidden": true,
+    "createWreck": false,
+    "allowedInPayloads": false,
+    "logicControllable": false,
+    "playerControllable": false,
+    "speed": 3.285,
+    "drag": 0.075,
+    "accel": 0.12,
+    "rotateSpeed": 8,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2000
+    },
+    "ammoCapacity": 100,
+    "hitSize": 11,
+    "flying": true,
+    "faceTarget": true,
+    "health": 320,
+    "armor": 2,
+    "lightRadius": 40,
+    "fogRadius": 20,
+    "engineOffset": 7,
+    "engineSize": 2.85,
+    "itemCapacity": 20,
+    "immunities": [
+        "burning",
+        "corroded"
+    ]
+}

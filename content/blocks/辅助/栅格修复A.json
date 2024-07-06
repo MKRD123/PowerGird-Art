@@ -1,0 +1,32 @@
+{
+	"type": "MendProjector",
+	"name": "栅格修复器",
+	"description":"以高能耗为代价，换取更广的修复范围与更高的修复速率。",
+	"details":"小，但是更强！",
+	"health": 105,
+	"size": 1,
+	"range": 58,
+	"reload": 144,
+	"healPercent": 4,
+	"phaseBoost": 6,
+	"phaseRangeBoost": 32,
+	"useTime": 480,
+	"consumes": {
+		"power": 0.625,
+		"items": {
+			"items": [
+				"晶栅/1"
+			],
+			"booster": true,
+			"optional": true
+		}
+	},
+	"requirements": [
+		"lead/30",
+		"silicon/18",
+		"titanium/8",
+		"晶栅/8"
+	],
+	"category": "effect",
+	"research": "lcaa"
+}

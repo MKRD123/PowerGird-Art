@@ -1,0 +1,72 @@
+{
+	"type": "legs",
+	"name": "兵革",
+	"description": "向远距离地面目标发射炮弹，对建筑造成更高伤害。",
+	"armor": 2,
+	"speed": 0.55,
+	"rotateSpeed": 3.6,
+	"itemCapacity": 20,
+	"hitSize": 8,
+	"health": 160,
+	"targetAir": false,
+	"targetGround": true,
+	"legCount": 4,
+	"legLength": 8,
+	"lockLegBase": true,
+	"legContinuousMove": true,
+	"legExtension": -2,
+	"legBaseOffset": 3,
+	"legMaxLength": 1.1,
+	"legMinLength": 0.2,
+	"legLengthScl": 0.96,
+	"legForwardScl": 1.1,
+	"legGroupSize": 3,
+	"rippleScale": 0.2,
+	"allowLegStep": true,
+	"research": {
+		"parent": "TierA便携式单位工厂",
+		"requirements": [
+			"silicon/400",
+			"graphite/200",
+			"titanium/100"
+		]
+	},
+	"requirements": {
+		"block": "ground-factory",
+		"time": 1200,
+		"requirements": [
+			"silicon/20",
+			"graphite/10",
+			"titanium/5"
+		]
+	},
+	"weapons": [
+		{
+			"name": "兵革1",
+			"x": 0,
+			"y": 1.75,
+			"reload": 65,
+			"shootCone": 10,
+			"shootSound": "missile",
+			"shootEffect": "shootSmall",
+			"mirror": false,
+			"bullet": {
+				"type": "ArtilleryBulletType",
+				"knockback": 0.8,
+				"speed": 3.2,
+				"lifetime": 65,
+				"width": 10,
+				"height": 10,
+				"collides": true,
+				"collidesTiles": true,
+				"damage": 6,
+				"splashDamageRadius": 18,
+				"splashDamage": 26,
+				"buildingDamageMultiplier": 1.5,
+				"hitSound": "explosion",
+				"hitSoundVolume": 1,
+				"hitEffect": "flakExplosion"
+			}
+		}
+	]
+}

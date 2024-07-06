@@ -1,0 +1,23 @@
+const lcaa =extend(ForceProjector,"lcaa",{});
+lcaa.phaseUseTime =480;
+lcaa.researchCostMultiplier=0.4;
+lcaa.buildCostMultiplier=0.4;
+lcaa.phaseRadiusBoost =24;
+lcaa.phaseShieldBoost =80;
+lcaa.radius =58;
+lcaa.health =140;
+lcaa.itemCapacity =20;
+lcaa.liquidCapacity =30;
+lcaa.shieldHealth=200;
+lcaa.cooldownNormal=0.3;
+lcaa.cooldownLiquid =1.4;
+lcaa.cooldownBrokenBase=0.3;
+lcaa.coolantConsumption=0.05;
+lcaa.consumeCoolant=true;
+lcaa.absorbEffect=Fx.absorb;
+lcaa.shieldBreakEffect=Fx.shieldBreak;
+lcaa.itemConsumer=lcaa.consumeItems(ItemStack.with(Items.silicon,1)).boost();
+lcaa.consumePower(0.625);
+lcaa.buildVisibility = BuildVisibility.shown;
+lcaa.requirements = ItemStack.with(Items.copper,50,Items.lead,25,Items.graphite,15,Items.silicon,15);
+lcaa.category = Category.effect

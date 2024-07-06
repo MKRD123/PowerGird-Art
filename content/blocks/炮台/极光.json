@@ -1,0 +1,65 @@
+{
+	"type": "PowerTurret",
+	"category": "turret",
+	"name": "极光",
+	"description": "向地面敌人发射强力激光束。",
+	"details": "",
+	"health": 1535,
+	"size": 3,
+	"reload": 120,
+	"rotateSpeed": 6,
+	"range": 247,
+	"targetAir": false,
+	"targetGround": true,
+	"shootSound": "laser",
+	"shake": 2,
+	"inaccuracy": 0,
+	"recoil": 3,
+	"recoilTime": 30,
+	"shootY": 9.5,
+	"consumes": {
+		"power": 11,
+		"coolant": {
+			"amount": 0.3,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"type": "ShootPattern",
+		"firstShotDelay": 40
+	},
+	"coolantMultiplier": 5,
+	"shootType": {
+		"type": "LaserBulletType",
+		"despawnEffect": "none",
+		"damage": 280,
+		"collidesAir": false,
+		"buildingDamageMultiplier": 0.3,
+		"ammoMultiplier": 1,
+		"chargeEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				"lancerLaserCharge",
+				"lancerLaserChargeBegin"
+			]
+		},
+		"width": 20,
+		"length": 247,
+		"pierceCap": 10,
+		"lightningColor": "b9c7f0",
+		"lightningSpacing": 20,
+		"lightningLength": 5,
+		"lightningDelay": 0.5,
+		"lightningLengthRand": 2,
+		"lightningDamage": 20,
+		"lightningAngleRand": 90,
+		"lifetime": 20
+	},
+	"research": "追迹",
+	"requirements": [
+		"lead/280",
+		"silicon/240",
+		"晶栅/140",
+		"plastanium/80"
+	]
+}

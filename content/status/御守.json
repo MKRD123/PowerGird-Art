@@ -1,0 +1,20 @@
+{
+	"name": "御守",
+	"description":"高能型装甲增强buff。",
+	"details":"比起“胄装”buff来说，此buff并不需要繁琐的焊接过程，仅需持有“御守”高能护身符即可，它会显著增强装甲强度并小幅度提升伤害。\n“御守”高能护身符本质上是装在锦袋内的一个卡片大小的装甲增强器，如果在激活后打开它便会失效。",
+	"healthMultiplier": 4,
+	"damageMultiplier":1.2,
+	"effectChance": 0.25,
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 32,
+		"length": -32,
+		"lifetime": 30,
+		"region": "pga-胄装特效",
+		"sizeFrom": 6,
+		"sizeTo": 0,
+		"colorFrom": "ffffff",
+		"colorTo": "929db5"
+	}
+}

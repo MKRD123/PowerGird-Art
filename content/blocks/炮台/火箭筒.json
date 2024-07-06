@@ -1,0 +1,139 @@
+{
+	"type": "ItemTurret",
+	"name": "火箭筒",
+	"description": "双联装火箭发射器，向敌人发射两枚加速火箭弹。",
+	"details": "虽然装填时间很长，但是由于弹药种类多，单轮伤害高，大家依然非常喜爱它。",
+	"size": 1,
+	"health": 300,
+	"range": 210,
+	"reload": 130,
+	"inaccuracy": 0,
+	"shoot": {
+		"type": "ShootAlternate",
+		"shotDelay": 10,
+		"shots": 2,
+		"barrels": 2
+	},
+	"rotateSpeed": 8,
+	"maxAmmo": 20,
+	"targetAir": true,
+	"targetGround": true,
+	"hasLiquids": false,
+	"consumeAmmoOnce": false,
+	"shootSound": "missile",
+	"ammoTypes": {
+		"graphite": {
+			"type": "MissileBulletType",
+			"splashDamageRadius": 18,
+			"splashDamage": 15,
+			"speed": 3.6,
+			"drag": -0.028,
+			"damage": 30,
+			"backColor": "B0C4DE",
+			"frontColor": "E3E3E3",
+			"trailColor": "B0C4DE",
+			"lifetime": 36,
+			"homingPower": 0.045,
+			"homingRange": 40,
+			"hitEffect": "flakExplosion"
+		},
+		"silicon": {
+			"type": "MissileBulletType",
+			"splashDamageRadius": 18,
+			"splashDamage": 22,
+			"speed": 4,
+			"drag": -0.032,
+			"damage": 20,
+			"backColor": "767A84",
+			"frontColor": "8E9097",
+			"trailColor": "767A84",
+			"lifetime": 32,
+			"homingPower": 0.15,
+			"homingRange": 60,
+			"reloadMultiplier": 1.5,
+			"ammoMultiplier": 3,
+			"hitEffect": "flakExplosion"
+		},
+		"pyratite": {
+			"type": "MissileBulletType",
+			"splashDamageRadius": 22,
+			"splashDamage": 36,
+			"speed": 3.6,
+			"drag": -0.028,
+			"damage": 18,
+			"makeFire": true,
+			"backColor": "FFB90F",
+			"frontColor": "E3E3E3",
+			"trailColor": "FFB90F",
+			"lifetime": 36,
+			"status": "burning",
+			"statusDuration": 600,
+			"homingPower": 0.045,
+			"homingRange": 40,
+			"ammoMultiplier": 3,
+			"hitEffect": "flakExplosion"
+		},
+		"blast-compound": {
+			"type": "MissileBulletType",
+			"splashDamageRadius": 32,
+			"splashDamage": 47,
+			"speed": 3.2,
+			"drag": -0.026,
+			"damage": 18,
+			"status": "blasted",
+			"backColor": "FF7F24",
+			"frontColor": "E3E3E3",
+			"trailColor": "FF7F24",
+			"lifetime": 40,
+			"homingPower": 0.045,
+			"homingRange": 40,
+			"ammoMultiplier": 4,
+			"hitEffect": "flakExplosionBig"
+		},
+		"晶栅": {
+			"type": "MissileBulletType",
+			"splashDamageRadius": 22,
+			"splashDamage": 12,
+			"lightning": 2,
+			"lightningLength": 6,
+			"lightningColor": "b9c7f0",
+			"lightningDamage": 11,
+			"knockback": 3,
+			"speed": 4.5,
+			"drag": -0.032,
+			"damage": 45,
+			"status": "扰频",
+			"statusDuration": 150,
+			"backColor": "b9c7f0",
+			"frontColor": "ffffff",
+			"trailColor": "b9c7f0",
+			"lifetime": 30,
+			"homingPower": 0.06,
+			"homingRange": 48,
+			"reloadMultiplier": 0.8,
+			"ammoMultiplier": 3,
+			"hitEffect": "flakExplosion"
+		}
+	},
+	"requirements": [
+		"copper/40",
+		"lead/25",
+		"graphite/20"
+	],
+	"buildCostMultiplier": 0.6,
+	"research": {
+		"parent": "追迹",
+		"requirements": [
+			"copper/200",
+			"lead/125",
+			"graphite/100"
+		],
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "XiaGu"
+			}
+		]
+	},
+	"category": "turret"
+}

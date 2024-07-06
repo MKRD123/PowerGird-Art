@@ -1,0 +1,23 @@
+{
+	"name": "装甲墙",
+	"description": "保护己方建筑，挡下敌人炮弹。\n前期的优良防御。",
+	"type": "Wall",
+	"size": 1,
+	"scaledHealth": 430,
+	"armor": 2,
+	"buildCostMultiplier": 3.6,
+	"requirements": [
+		"copper/5",
+		"lead/2",
+		"graphite/2"
+	],
+	"category": "defense",
+	"research": {
+		"parent": "追迹",
+		"requirements": [
+			"copper/25",
+			"lead/10",
+			"graphite/10"
+		]
+	}
+}

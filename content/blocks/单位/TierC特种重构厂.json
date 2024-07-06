@@ -1,0 +1,34 @@
+{
+    "type": "Reconstructor",
+    "name": "倍乘级特种重构厂",
+    "description": "将数增级的特种单位提升至更高等级。",
+    "health": 2250,
+    "size": 5,
+    "consumes": {
+        "power": 10,
+        "items": [
+            "silicon/180",
+            "titanium/90",
+            "晶栅/40"
+        ]
+    },
+    "upgrades": [],
+    "constructTime": 1200,
+    "requirements": [
+        "lead/800",
+        "silicon/600",
+        "titanium/500",
+        "thorium/400",
+        "晶栅/200"
+    ],
+    "category": "units",
+    "research": {
+        "parent": "TierB特种重构厂",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "fungalPass"
+            }
+        ]
+    }
+}

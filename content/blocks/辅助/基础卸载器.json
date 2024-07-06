@@ -1,0 +1,17 @@
+{
+    "type": "Unloader",
+    "name": "基础卸载器",
+    "description": "卸载相邻方块中的指定物品，速度较慢。",
+    "health": 55,
+    "size": 1,
+    "speed": 10,
+    "solid": "true",
+    "update": "true",
+    "hasItems": "true",
+    "requirements": ["copper/12","lead/8","graphite/5"],
+    "research": {
+        "parent": "箱子",
+        "requirements": ["copper/120","lead/80","graphite/50"]
+    },
+    "category": "effect"
+}

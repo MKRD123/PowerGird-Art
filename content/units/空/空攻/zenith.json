@@ -1,0 +1,39 @@
+{
+    "details": "导弹装药量恢复，射程略微提升",
+    "range": 170,
+    "speed": 2,
+    "weapons": [
+        {
+            "name": "苍穹1",
+            "reload": 35,
+            "x": 7.5,
+            "y": 0,
+            "shootY": 8,
+            "shoot": {
+                "shots": 2
+            },
+            "rotate": true,
+            "inaccuracy": 5,
+            "alternate": true,
+            "ejectEffect": "casing2",
+            "shootSound": "missile",
+            "bullet": {
+                "type": "MissileBulletType",
+                "damage": 15,
+                "splashDamageRadius": 25,
+                "splashDamage": 16,
+                "backColor": "FF7F24",
+                "hitEffect": "explosion",
+                "despawnEffect": "explosion",
+                "smokeEffect": "none",
+                "weaveScale": 6,
+				"weaveMag": 1,
+				"drag":-0.004,
+                "speed": 3.29,
+                "lifetime": 50,
+                "width": 8,
+                "height": 9
+            }
+        }
+    ]
+}

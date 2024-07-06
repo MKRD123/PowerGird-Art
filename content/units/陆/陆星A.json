@@ -1,0 +1,71 @@
+{
+    "type": "mech",
+    "description": "向敌人发射小型穿甲弹。\n拥有弹道校正模块。",
+    "details": "造价低，速度快，伤害高，试试看？",
+    "name": "原子",
+    "canBoost": true,
+    "immunities": [
+        "spore-slowed",
+        "corroded"
+    ],
+    "speed": 1.08,
+    "hitSize": 7.2,
+    "health": 145,
+    "armor": 1,
+    "lightRadius": 40,
+    "fogRadius": 24,
+    "mineSpeed": 1.5,
+    "mineTier": 1,
+    "mineRange": 60,
+    "buildRange": 192,
+    "maxRange": 192,
+    "buildSpeed": 0.5,
+    "rotateSpeed": 7.5,
+    "itemCapacity": 20,
+    "boostMultiplier": 3.2,
+    "research": {
+        "parent": "TierA便携式单位工厂",
+        "requirements": [
+            "lead/600",
+            "silicon/450",
+            "graphite/300"
+        ]
+    },
+    "requirements": {
+		"block": "ground-factory",
+		"time": 1200,
+		"requirements": ["lead/20","silicon/15","graphite/10"]},
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 1000
+    },
+    "ammoCapacity": 100,
+    "weapons": [
+        {
+            "name": "原子1",
+            "x": 4,
+            "y": 0,
+            "top":false,
+            "shootX": 0,
+            "shootY": 4,
+            "reload": 31,
+            "rotate": false,
+            "ejectEffect": "none",
+            "bullet": {
+                "lifetime": 30,
+                "speed": 6.5,
+                "backColor": "b9c7f0",
+                "frontColor": "ffffff",
+                "homingRange": 32,
+                "homingPower": 0.01,
+                "status": "扰频",
+                "statusDuration": 360,
+                "shootEffect": "shootSmall",
+                "smokeEffect": "shootSmallSmoke",
+                "damage": 20,
+                "width": 5,
+                "height": 9
+            }
+        }
+    ]
+}

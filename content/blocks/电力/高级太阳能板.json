@@ -1,0 +1,11 @@
+{
+	"type": "SolarGenerator",
+	"name": "高级太阳能板",
+	"description": "利用太阳能产生少量电力。\n发电量与地图光照成正比。",
+	"size": 1,
+	"health": 45,
+    "powerProduction": 0.24,
+	"requirements": ["lead/8","silicon/25","晶栅/5"],
+	"category": "power",
+	"research":"solar-panel"
+}

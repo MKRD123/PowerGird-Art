@@ -1,0 +1,21 @@
+{
+    "name": "胄装",
+    "description":"常见的装甲增强buff。",
+    "details":"获取此buff的方式非常简单，仅需在原有的基础上焊接新的装甲上去，这必定会因为质量增大导致机动性变差。",
+    "healthMultiplier": 2,
+    "speedMultiplier": 0.8,
+    "dragMultiplier": 0.8,
+    "effectChance": 0.25,
+    "effect": {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "baseLength": 32,
+        "length": -32,
+        "lifetime": 30,
+        "region": "pga-胄装特效",
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "colorFrom": "ffffff",
+        "colorTo": "929db5"
+    }
+}

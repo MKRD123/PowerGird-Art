@@ -1,0 +1,23 @@
+{
+    "name": "先锋",
+    "description":"强大的领头者buff。",
+    "details":"已知的获取此buff方法只有两种：\nI.权限超过IV后消耗建造此单位至少4倍的能量获得暂时性的效果，消耗能量越多，持续时间越长\nII.由■■■■直接授予，效果持续时间尚不明确。\n“[coral]急！ [red]急！ [crimson]急！[grey]”",
+    "healthMultiplier": 2,
+    "speedMultiplier": 1.6,
+    "reloadMultiplier": 1.6,
+    "damageMultiplier": 1.6,
+    "effectChance": 0.4,
+    "effect": {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "baseLength": 18,
+        "length": 27,
+        "spin": 12,
+        "lifetime": 45,
+        "region": "shell",
+        "sizeFrom": 4.8,
+        "sizeTo": 0,
+        "colorFrom": "ffffff",
+        "colorTo": "c93b3b"
+    }
+}

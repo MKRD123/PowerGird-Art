@@ -1,0 +1,105 @@
+{
+    "type": "naval",
+    "name": "堆彻",
+    "description": "轻型驱逐舰，向敌人发射高速子弹与导弹。",
+    "details": "一艘“堆彻”级驱逐舰通常是护航的最佳选择。",
+    "immunities": [
+        "wet",
+        "spore-slowed",
+        "corroded"
+    ],
+    "dpsEstimate": 193.07,
+    "speed": 0.94,
+    "rotateSpeed": 3,
+    "trailLength": 32,
+    "waveTrailX": 3.75,
+    "waveTrailY": -9,
+    "trailScl": 1.8,
+    "hitSize": 16,
+    "lightRadius": 57.6,
+    "fogRadius": 30,
+    "health": 700,
+    "armor": 6,
+    "faceTarget": false,
+    "research": {
+        "parent": "海A",
+        "requirements": [
+            "graphite/1800",
+            "silicon/1800",
+            "metaglass/1500",
+            "titanium/500"
+        ]
+    },
+    "requirements": {
+        "block": "TierB特种重构厂",
+        "previous": "海A"
+    },
+    "weapons": [
+        {
+            "name": "置放1",
+            "x": 0,
+            "y": 5,
+            "mirror": false,
+            "shootX": 0,
+            "shootY": 4,
+            "shoot": {
+                "type": "ShootAlternate",
+                "shots": 2,
+                "barrels": 2,
+                "shotDelay": 8.15
+            },
+            "reload": 16.3,
+            "rotate": true,
+            "rotateSpeed": 8,
+            "ejectEffect": "none",
+            "bullet": {
+                "lifetime": 24,
+                "speed": 7,
+                "backColor": "b9c7f0",
+                "frontColor": "ffffff",
+                "homingRange": 32,
+                "homingPower": 0.01,
+                "shootEffect": "shootSmall",
+                "smokeEffect": "shootSmallSmoke",
+                "damage": 12,
+                "width": 5,
+                "height": 9
+            }
+        },
+        {
+            "name": "堆彻1",
+            "x": 0,
+            "y": -3,
+            "mirror": false,
+            "shootX": 0,
+            "shootY": 2.5,
+            "shoot": {
+                "type": "ShootAlternate",
+                "shots": 3,
+                "barrels": 3,
+                "spread": 2.25,
+                "shotDelay": 3
+            },
+            "reload": 55,
+            "rotate": true,
+            "rotateSpeed": 7,
+            "ejectEffect": "none",
+            "bullet": {
+                "type": "MissileBulletType",
+                "speed": 8,
+                "lifetime": 30,
+                "damage": 10,
+                "splashDamageRadius": 22,
+                "splashDamage": 22,
+                "homingPower": 0.05,
+                "homingRange": 40,
+                "backColor": "b9c7f0",
+                "frontColor": "ffffff",
+                "trailColor": "b9c7f0",
+                "collidesTiles": "true",
+                "collides": "true",
+                "hitEffect": "blastExplosion"
+            }
+        }
+    ]
+}

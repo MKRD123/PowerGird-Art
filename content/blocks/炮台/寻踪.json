@@ -1,0 +1,86 @@
+{
+	"type": "ItemTurret",
+	"name": "寻踪",
+	"description": "基础炮台。向敌人发射小型追踪弹并显著降低其移动速度。",
+	"details": "“不要小看铜铅科技的力量！”",
+	"size": 1,
+	"health": 285,
+	"range": 150,
+	"reload": 36,
+	"inaccuracy": 0,
+	"rotateSpeed": 10,
+	"maxAmmo": 36,
+	"ammoPerShot": 2,
+	"targetAir": true,
+	"targetGround": true,
+	"hasLiquids": true,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"coolantMultiplier": 10,
+	"ammoTypes": {
+		"lead": {
+			"speed": 7,
+			"damage": 12,
+			"lifetime": 22.5,
+			"width": 6.5,
+			"height": 10,
+			"status": "迟缓",
+			"statusDuration": 15,
+			"homingRange": 32,
+			"homingPower": 0.02,
+			"ammoMultiplier": 3,
+			"shootEffect": "shootSmall"
+		},
+		"silicon": {
+			"speed": 7.5,
+			"damage": 16,
+			"lifetime": 21,
+			"width": 7,
+			"height": 11,
+			"status": "迟缓",
+			"statusDuration": 15,
+			"reloadMultiplier": 1.6,
+			"homingRange": 48,
+			"homingPower": 0.12,
+			"ammoMultiplier": 6,
+			"shootEffect": "shootSmall"
+		},
+		"graphite": {
+			"speed": 7.5,
+			"damage": 24,
+			"lifetime": 21,
+			"width": 7.5,
+			"height": 12,
+			"status": "freezing",
+			"statusDuration": 24,
+			"reloadMultiplier": 0.7,
+			"homingRange": 36,
+			"homingPower": 0.025,
+			"ammoMultiplier": 6,
+			"shootEffect": "shootSmall"
+		}
+	},
+	"requirements": [
+		"copper/20",
+		"lead/30"
+	],
+	"buildCostMultiplier": 0.7,
+	"research": {
+		"parent": "追迹",
+		"requirements": [
+			"copper/100",
+			"lead/150"
+		],
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "ShanGu"
+			}
+		]
+	},
+	"category": "turret"
+}

@@ -1,0 +1,23 @@
+{
+	"type": "UnitFactory","category":"units",
+	"name": "便携式单位工厂",
+	"description": "生产大部分“基础级”单位，占地面积较小，但速度较慢。",
+	"details":"模组冲突导致原版工厂无法生产特种单位？Plan B(便携式单位工厂)，启动！",
+    "scaledHealth": 55,
+    "size":2,
+    "buildCostMultiplier":0.8,
+	"consumes":{"power":0.8},
+	"plans":[
+		{ "unit": "dagger","time": 1440, "requirements": ["lead/10","silicon/10"]},
+		{ "unit": "crawler","time": 960, "requirements": ["silicon/8","coal/10"]},
+		{ "unit": "nova","time": 3840, "requirements": ["lead/20","silicon/30","titanium/20"]},
+		{ "unit": "flare","time": 1440, "requirements": ["silicon/15"]},
+		{ "unit": "mono","time": 3360, "requirements": ["lead/15","silicon/30"]},
+		{ "unit": "陆星A","time": 1920, "requirements": ["lead/20","silicon/15","graphite/10"]},
+		{ "unit": "空A","time": 1440, "requirements": ["silicon/25","graphite/15"]},
+		{ "unit": "海A","time": 3840, "requirements": ["lead/15","silicon/35","metaglass/30"]}],
+	"requirements": ["copper/40","lead/50","silicon/30"],
+    "research":{
+    "parent":"晶栅",
+    "objectives": [{"type": "SectorComplete","preset": "XiaGu"}],
+    "requirements": ["copper/200","lead/250","silicon/150"]}}

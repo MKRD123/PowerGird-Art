@@ -1,0 +1,128 @@
+{
+	"details": "使用新型护甲，无惧牵引装置，换用新式连发机枪，装载纳米瘫痪弹发射器，对敌方电网造成显著破坏的同时，修复己方建筑。\nmkrd为此试验许久，还不快谢谢mkrd？",
+	"health": 280,
+	"armor": 1.5,
+	"hitSize": 10.5,
+	"mineTier": 3,
+	"speed": 4.25,
+	"rotateSpeed": 20,
+	"ammoType": "silicon",
+	"ammoCapacity": 300,
+	"weapons": [
+		{
+			"name": "beta1",
+			"reload": 13.2,
+			"x": 1,
+			"y": 2,
+			"rotate": false,
+			"top": false,
+			"inaccuracy": 1.5,
+			"shootSound": "pew",
+			"shoot": {
+				"shots": 2,
+				"shotDelay": 2.4
+			},
+			"ejectEffect": "casing1",
+			"bullet": {
+				"buildingDamageMultiplier": 0.02,
+				"damage": 13,
+				"ammoMultiplier": 1,
+				"homingPower": 0.05,
+				"homingRange": 60,
+				"speed": 6,
+				"lifetime": 42.67,
+				"width": 8,
+				"height": 13
+			}
+		},
+		{
+			"name": "gamma0",
+			"reload": 100,
+			"x": 0,
+			"y": 0,
+			"rotate": false,
+			"mirror": false,
+			"inaccuracy": 0,
+			"shootSound": "lasershoot",
+			"bullet": {
+				"type": "EmpBulletType",
+				"radius": 28,
+				"timeIncrease": 1,
+				"timeDuration": 0,
+				"powerDamageScl": 2,
+				"powerSclDecrease": 1,
+				"unitDamageScl": 1,
+				"hitUnits": true,
+				"chainEffect": "chainLightning",
+				"hitPowerEffect": {
+					"type": "ParticleEffect",
+					"particles": 7,
+					"baseLength": 0,
+					"length": 26,
+					"lifetime": 10,
+					"line": true,
+					"lenFrom": 16,
+					"lenTo": 0,
+					"strokeFrom": 1,
+					"strokeTo": 0,
+					"colorFrom": "76d081",
+					"colorTo": "76d081",
+					"cone": 360
+				},
+				"applyEffect": "none",
+				"speed": 10,
+				"lifetime": 26,
+				"trailLength": 4,
+				"trailWidth": 1.5,
+				"scaleLife": true,
+				"width": 15,
+				"height": 26,
+				"hitSound": "spark",
+				"collides": true,
+				"damage": 15,
+				"splashDamageRadius": 28,
+				"splashDamage": 20,
+				"buildingDamageMultiplier": 0.02,
+				"healPercent": 3,
+				"healAmount": 30,
+				"hitShake": 2.4,
+				"backColor": "76d081",
+				"frontColor": "76d081",
+				"trailColor": "76d081",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "WaveEffect",
+							"lifetime": 22,
+							"sizeFrom": 28,
+							"sizeTo": 28,
+							"strokeFrom": 2.4,
+							"strokeTo": 0.4,
+							"colorFrom": "76d081",
+							"colorTo": "76d081"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 14,
+							"baseLength": 13,
+							"length": 22,
+							"lifetime": 10,
+							"line": true,
+							"lenFrom": 13,
+							"lenTo": 0,
+							"strokeFrom": 3.2,
+							"strokeTo": 0,
+							"colorFrom": "76d081",
+							"colorTo": "76d081",
+							"cone": 360
+						}
+					]
+				},
+				"shootEffect": "none",
+				"status": "扰频",
+				"statusDuration": 24
+			}
+		}
+	]
+}

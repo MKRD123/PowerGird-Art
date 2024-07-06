@@ -1,0 +1,27 @@
+{
+    "type": "GenericCrafter",
+    "name": "晶栅编织器",
+    "description":"消耗能量重新排列二氧化硅晶体，注入能量形成晶栅。",
+    "details":"“俺寻思就是这么整的吧”\n“不对，玻璃里的铅哪去了”",
+    "outputItems":["晶栅/1"],
+    "health": 260,
+    "size": 2,
+    "itemCapacity": 20,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 150,
+    "updateEffect": "none",
+    "consumes": {"power": 3.333333334,"items": {"items":["metaglass/2"]}},
+    "requirements": ["lead/80","silicon/60","metaglass/40"],
+    "category": "crafting",
+    "research": {
+		"parent": "大型窑炉",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "XiaGu"
+			}
+		]
+	},
+}

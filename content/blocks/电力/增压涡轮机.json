@@ -1,0 +1,55 @@
+{
+	"type": "ConsumeGenerator",
+	"name": "增压涡轮机",
+	"description":"燃烧易燃材料并将水转化为蒸汽来发电。\n拥有更高的燃烧效率。",
+	"details":"更大！更快！更强！",
+	"size": 3,
+	"health": 480,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 40,
+	"powerProduction": 20,
+	"itemCapacity": 20,
+	"liquidCapacity": 80,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-转",
+				"rotateSpeed":4,
+				"rotation":0
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-转2",
+				"rotateSpeed":-4,
+				"rotation":0
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-顶"
+			},
+			"DrawWarmupRegion",
+			{"type": "DrawLiquidRegion",
+			"drawLiquid": "water"}
+		]
+	},
+	"generateEffect": "generatespark",
+	"consumes": {
+		"itemFlammable":{},
+		"itemExplode":{},
+		"liquid": "water/0.3"
+	},
+	"requirements": [
+	    "lead/200",
+		"titanium/130",
+		"silicon/120"
+		"metaglass/75",
+	],
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": "steam-generator"
+}

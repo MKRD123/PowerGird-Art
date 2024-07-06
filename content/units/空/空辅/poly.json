@@ -1,0 +1,11 @@
+{
+	"armor": 1,
+	"abilities": [
+		{
+			"type": "RepairFieldAbility",
+			"amount": 10,
+			"reload": 480,
+			"range": 50
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"name": "晶栅墙",
+	"description": "保护己方建筑，挡下敌人炮弹。\n可以放置在深水上并阻挡激光。\n前中期的最优选择。",
+	"type": "Wall",
+	"size": 1,
+	"scaledHealth": 490,
+	"armor": 4,
+	"lightningChance": 0.1,
+	"lightningDamage": 17,
+	"lightningLength": 14,
+	"lightningColor": "b9c7f0",
+	"buildCostMultiplier": 3,
+	"placeableLiquid": true,
+	"absorbLasers": true,
+	"requirements": [
+		"晶栅/6",
+		"metaglass/3",
+		"titanium/3"
+	],
+	"category": "defense",
+	"research": "装甲墙"
+}

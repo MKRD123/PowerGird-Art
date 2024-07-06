@@ -1,0 +1,263 @@
+{
+	"type": "payload",
+	"name": "金乌",
+	"description": "向敌人发射远程轨道炮。",
+	"details": "",
+	"speed": 1.66,
+	"drag": 0.04,
+	"accel": 0.05,
+	"rotateSpeed": 3,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 2000
+	},
+	"ammoCapacity": 100,
+	"hitSize": 37,
+	"flying": true,
+	"faceTarget": true,
+	"health": 5800,
+	"armor": 7,
+	"lightRadius": 120,
+	"fogRadius": 27,
+	"engineOffset": 16,
+	"engineSize": 9,
+	"lowAltitude": true,
+	"engines": [
+		{
+			"x": -20.5,
+			"y": -11.5,
+			"radius": 3.6,
+			"rotation": -135
+		},
+		{
+			"x": 20.5,
+			"y": -11.5,
+			"radius": 3.6,
+			"rotation": -45
+		}
+	],
+	"buildSpeed": 1,
+	"buildRange": 160,
+	"itemCapacity": 45,
+	"payloadCapacity": 64,
+	"immunities": [
+		"burning",
+		"spore-slowed",
+		"corroded"
+	],
+	"research": {
+		"parent": "空B",
+		"requirements": [
+			"silicon/6000",
+			"titanium/2500",
+			"晶栅/1000"
+		]
+	},
+	"requirements": {
+		"block": "TierC特种重构厂",
+		"previous": "空B"
+	},
+	"weapons": [
+		{
+			"name": "金乌主炮",
+			"x": 0,
+			"y": 0,
+			"top": false,
+			"shootX": 0,
+			"shootY": 2,
+			"recoil": 0,
+			"reload": 200,
+			"shootCone": 15,
+			"rotate": false,
+			"mirror": false,
+			"ejectEffect": "none",
+			"cooldownTime": 90,
+			"bullet": {
+				"width": 12,
+				"height": 26,
+				"speed": 12,
+				"lifetime": 28.8,
+				"hitSize": 8,
+				"damage": 260,
+				"splashDamage": 205,
+				"splashDamageRadius": 50,
+				"lightning": 3,
+				"lightningLength": 9,
+				"lightningLengthRand": 3,
+				"lightningColor": "b9c7f0",
+				"lightningDamage": 45,
+				"backColor": "b9c7f0",
+				"frontColor": "ffffff",
+				"trailColor": "b9c7f0",
+				"trailLength": 8,
+				"trailWidth": 2.4,
+				"hitShake": 5,
+				"shootEffect": "shootBig",
+				"smokeEffect": "shootBigSmoke",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 16,
+							"sizeFrom": 10,
+							"sizeTo": 2,
+							"length": 50,
+							"baseLength": 0,
+							"lifetime": 27,
+							"region": "pga-空心菱形",
+							"colorFrom": "ffffff",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 8,
+							"sizeFrom": 8,
+							"sizeTo": 0,
+							"length": 50,
+							"baseLength": 0,
+							"lifetime": 27,
+							"colorFrom": "ffffff",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 20,
+							"strokeFrom": 1.5,
+							"strokeTo": 1.2,
+							"lenFrom": 12,
+							"lenTo": 0,
+							"line": true,
+							"length": 42,
+							"baseLength": 12,
+							"lifetime": 27,
+							"colorFrom": "ffffff",
+							"colorTo": "b9c7f090"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 20,
+							"sizeFrom": 1,
+							"sizeTo": 50,
+							"strokeFrom": 4,
+							"strokeTo": 0,
+							"colorFrom": "ffffff",
+							"colorTo": "b9c7f0"
+						}
+					]
+				},
+				"despawnEffect": "none",
+				"hitSound": "plasmaboom",
+				"trailChance": 1,
+				"trailRotation": true,
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"region": "pga-空心菱形",
+					"sizeFrom": 8,
+					"sizeTo": 1,
+					"length": 15,
+					"baseLength": 5,
+					"lifetime": 40,
+					"spin": 3,
+					"colorFrom": "b9c7f090",
+					"colorTo": "ffffff"
+				},
+				"fragBullets": 6,
+				"fragLifeMin": 0.3,
+				"fragBullet": {
+					"width": 6,
+					"height": 6,
+					"sprite": "circle-bullet",
+					"backColor": "b9c7f0",
+					"frontColor": "ffffff",
+					"shrinkY": 0,
+					"lifetime": 10,
+					"speed": 5.4,
+					"damage": 88,
+					"splashDamage": 46,
+					"splashDamageRadius": 26,
+					"lightning": 2,
+					"lightningLength": 6,
+					"lightningLengthRand": 3,
+					"lightningColor": "b9c7f0",
+					"lightningDamage": 16,
+					"hitShake": 2,
+					"hitEffect": {
+						"type": "MultiEffect",
+						"effects": [
+							{
+								"type": "ParticleEffect",
+								"particles": 1,
+								"sizeFrom": 6,
+								"sizeTo": 0,
+								"length": 0,
+								"baseLength": 0,
+								"lifetime": 27,
+								"colorFrom": "ffffff",
+								"colorTo": "b9c7f0",
+								"cone": 360
+							},
+							{
+								"type": "ParticleEffect",
+								"particles": 8,
+								"strokeFrom": 1.2,
+								"strokeTo": 1,
+								"lenFrom": 8,
+								"lenTo": 0,
+								"line": true,
+								"length": 32,
+								"baseLength": 8,
+								"lifetime": 27,
+								"colorFrom": "ffffff",
+								"colorTo": "b9c7f090"
+							},
+							{
+								"type": "WaveEffect",
+								"lifetime": 20,
+								"sizeFrom": 0,
+								"sizeTo": 26,
+								"strokeFrom": 2,
+								"strokeTo": 0,
+								"colorFrom": "ffffff",
+								"colorTo": "b9c7f0"
+							}
+						]
+					},
+					"despawnEffect": "none"
+				}
+			}
+		},
+		{
+			"name": "金乌1",
+			"x": 11,
+			"y": -4.75,
+			"top": true,
+			"shootX": 0,
+			"shootY": 3,
+			"reload": 8,
+			"shoot": {
+				"shots": 2,
+				"shotDelay": 4
+			},
+			"rotate": true,
+			"ejectEffect": "none",
+			"bullet": {
+				"lifetime": 22,
+				"speed": 9,
+				"backColor": "b9c7f0",
+				"frontColor": "ffffff",
+				"trailColor": "b9c7f0",
+				"homingRange": 32,
+				"homingPower": 0.01,
+				"shootEffect": "shootSmall",
+				"smokeEffect": "shootSmallSmoke",
+				"damage": 16,
+				"width": 5,
+				"height": 9,
+				"trailLength": 6,
+				"trailWidth": 2
+			}
+		}
+	]
+}

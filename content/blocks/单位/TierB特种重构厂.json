@@ -1,0 +1,13 @@
+{
+	"type": "Reconstructor",
+	"name": "数增级特种重构厂",
+	"description":"将基础级的特种单位提升至更高等级。",
+    "health": 540,"size":3,
+	"consumes":{"power":3.5,
+	"items":["graphite/60","silicon/60","titanium/25"]},
+	"upgrades":[],
+	"constructTime":600,
+	"requirements": ["lead/240","silicon/150","graphite/100","titanium/75"],
+	"category":"units",
+	"research": {"parent": "TierA便携式单位工厂",
+	"objectives": [{"type": "SectorComplete","preset": "biomassFacility"}]}}

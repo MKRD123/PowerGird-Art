@@ -1,0 +1,37 @@
+{
+    "health": 650,
+    "details": "重铸T3路虎荣光！",
+    "weapons": [
+        {
+            "name": "耀星1",
+            "reload": 50,
+            "x": 6.5,
+            "shootY": 4,
+            "rotate": false,
+            "top": false,
+            "recoil": 4,
+            "inaccuracy": 0,
+            "alternate": true,
+            "shootSound": "laser",
+            "shake": 2,
+            "bullet": {
+                "type": "LaserBulletType",
+                "healPercent": 10,
+                "recoil": 1,
+                "damage": 47,
+                "collidesTeam": true,
+                "shootEffect": "bigShockwave",
+                "sideAngle": 35,
+                "sideWidth": 1,
+                "sideLength": 70,
+                "colors": [
+                    "7CF38990",
+                    "97FFA880",
+                    "FFFFFF"
+                ],
+                "width": 16,
+                "length": 190
+            }
+        }
+    ]
+}

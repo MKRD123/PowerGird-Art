@@ -1,0 +1,21 @@
+{
+    "type": "PowerNode",
+    "name": "栅能节点",
+    "description": "远程接收或传输电力，拥有更高的防护水平与连接范围。\n可以放置在深水上。",
+    "details":"虽然造价高到许多前线指挥官无法接受，但大多数安全系数较高的防线都安装了它。\n“事实胜于雄辩！”",
+    "health": 380,
+    "armor": 4,
+    "size": 1,
+    "maxNodes": 12,
+    "laserRange": 10.25,
+    "research": "power-node",
+    "buildCostMultiplier": 0.5,
+    "placeableLiquid": true,
+    "requirements": [
+        "lead/3",
+        "silicon/6",
+        "titanium/4"
+        "晶栅/3",
+    ],
+    "category": "power"
+}

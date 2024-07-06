@@ -1,0 +1,22 @@
+{
+    "name": "迟缓",
+    "description":"强力缓速buff，能够使敌人在高速状态下更快减速。",
+    "speedMultiplier": 0.6,
+    "dragMultiplier": 1.6,
+    "effectChance": 0.12,
+    "effect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "strokeFrom": 2,
+        "strokeTo": 1,
+        "lenFrom": 9,
+        "lenTo": 4.5,
+        "line": true,
+        "length": 30,
+        "baseLength": 9,
+        "lifetime": 9,
+        "colorFrom": "a2a2a2",
+        "colorTo": "a2a2a2",
+        "cone": 360
+    }
+}

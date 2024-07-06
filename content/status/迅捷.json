@@ -1,0 +1,8 @@
+{
+    "name":"迅捷",
+    "healthMultiplier":0.88,
+	"speedMultiplier":1.33,
+	"reloadMultiplier":1.88,
+	"effectChance":0.3,
+	"effect":"none"
+}

@@ -1,0 +1,19 @@
+{
+	"name": "小型超速器",
+	"description": "增加范围内所有可超速方块的工作效率，可使用晶栅提高加速倍率。",
+	"type": "OverdriveProjector",
+	"health": 90,
+	"size": 1,
+	"range": 60,
+	"phaseRangeBoost":12,
+	"speedBoostPhase":0.3,
+	"speedBoost": 1.2,
+	"hasBoost":true,
+	"useTime":480,
+	"consumes": {"power": 1.2,"items":{"items":[{"item":"晶栅","amount":1}],
+	"booster":true,"optional":true}},
+	"requirements": ["copper/70","lead/45","silicon/30"],
+    "research": {"parent": "lcaa",
+    "requirements": ["copper/1000","lead/1000","silicon/500"]},
+	"category": "effect"
+}

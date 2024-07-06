@@ -1,0 +1,128 @@
+{
+	"type": "NuclearReactor",
+	"name": "大型反应堆",
+	"description": "[white]大型裂变反应堆，通过钍裂变时产生的能量发电，需要持续供冷，[red]否则会发生毁灭性的爆炸。\n实际消耗6/s冷冻液。",
+	"details": "装甲厚重，结实耐用，安全可靠。",
+	"size": 4,
+	"health": 2080,
+	"armor": 8,
+	"absorbLasers": true,
+	"liquidCapacity": 150,
+	"itemCapacity": 60,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsPower": true,
+	"powerProduction": 50,
+	"itemDuration": 240,
+	"lightColor": "FFFFFF",
+	"explosionShake": 10,
+	"explosionShakeDuration": 150,
+	"explosionRadius": 36,
+	"explosionDamage": 15000,
+	"explodeSound": "DBZ1",
+	"explodeEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "WaveEffect",
+				"lifetime": 24,
+				"sizeFrom": 0,
+				"sizeTo": 288,
+				"strokeFrom": 18,
+				"strokeTo": 0,
+				"colorFrom": "bf92f9",
+				"colorTo": "ffffff"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 30,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 32,
+				"sizeTo": 0,
+				"length": 260,
+				"baseLength": 0,
+				"lifetime": 400,
+				"colorFrom": "bf92f970",
+				"colorTo": "8a73c670"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 48,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 27,
+				"sizeTo": 0,
+				"length": 270,
+				"baseLength": 0,
+				"lifetime": 420,
+				"colorFrom": "bf92f970",
+				"colorTo": "8a73c670"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 64,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 22,
+				"sizeTo": 0,
+				"length": 280,
+				"baseLength": 0,
+				"lifetime": 450,
+				"colorFrom": "bf92f970",
+				"colorTo": "8a73c670"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 42,
+				"line": true,
+				"interp": "pow10Out",
+				"sizeInterp": "pow3In",
+				"strokeFrom": 4,
+				"strokeTo": 0,
+				"lenFrom": 90,
+				"lenTo": 0,
+				"length": 225,
+				"baseLength": 60,
+				"lifetime": 90,
+				"colorFrom": "bf92f9",
+				"colorTo": "8a73c6"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 108,
+				"line": true,
+				"interp": "pow10Out",
+				"sizeInterp": "pow3In",
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"lenFrom": 20,
+				"lenTo": 0,
+				"length": 260,
+				"baseLength": 60,
+				"lifetime": 300,
+				"colorFrom": "f68021",
+				"colorTo": "fff8e8"
+			}
+		]
+	},
+	"fuelItem": "thorium",
+	"heating": 0.01,
+	"coolantPower": 8,
+	"consumes": {
+		"liquid": "cryofluid/0.09834",
+		"items": [
+			"thorium/2"
+		]
+	},
+	"requirements": [
+		"lead/600",
+		"graphite/350",
+		"metaglass/120",
+		"silicon/450",
+		"thorium/300",
+		"plastanium/80"
+	],
+	"category": "power",
+	"research": "thorium-reactor"
+}

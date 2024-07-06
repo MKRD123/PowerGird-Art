@@ -1,0 +1,11 @@
+{
+    "name":"扰频",
+    "description":"特定频段的的电磁脉冲，使敌方机体的工作效率大幅度降低。",
+	"healthMultiplier":0.8,
+	"speedMultiplier":0.72,
+	"reloadMultiplier":0.86,
+	"buildSpeedMultiplier":0.6,
+	"dragMultiplier": 1.5,
+	"effectChance":0.3,
+	"effect":"none"
+}

@@ -1,0 +1,26 @@
+{
+	"type": "StorageBlock",
+	"name": "箱子",
+	"description": "在前期储存少量物品。",
+	"size": 1,
+	"health": 85,
+	"itemCapacity": 70,
+	"requirements": [
+		"copper/55",
+		"lead/35"
+	],
+	"research": {
+		"parent": "晶栅",
+		"requirements": [
+			"copper/275",
+			"lead/175"
+		],
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "ShanGu"
+			}
+		]
+	},
+	"category": "effect"
+}

@@ -1,0 +1,41 @@
+{
+    "name": "装甲电池",
+    "health": 95,
+    "description": "优化储存结构，强化外部装甲，储存更多电量的同时，血量更高。",
+    "details": "[red]被摧毁后会引发爆炸",
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 5
+        },
+        {
+            "item": "lead",
+            "amount": 25
+        }
+    ],
+    "destroyBullet": {
+        "speed": 0,
+        "lifetime": 0,
+        "splashDamageRadius": 30,
+        "splashDamage": 18,
+        "status": "shocked",
+        "statusDuration": 20,
+        "collidesTiles": "true",
+        "collides": "true",
+        "hitEffect": "blastExplosion",
+        "lightning": 2,
+        "lightningLength": 7,
+        "lightningLengthRand": 12,
+        "lightningColor": "c85c51",
+        "lightningDamage": 17
+    },
+    "consumes": {
+        "powerBuffered": 5000
+    },
+    "emptyLightColor": "f8c266",
+    "fullLightColor": "fb9567",
+    "size": 1,
+    "type": "Battery",
+    "category": "power",
+    "research": "battery"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "MassDriver",
+    "name": "小型质量驱动器",
+    "description":"打包物品并将其发射到另一个小型质量驱动器。\n需要消耗电力。",
+    "size": 2,
+    "hasItems": true,
+    "itemCapacity": 80,
+    "reload": 240,
+    "range": 220,
+    "consumes": {
+        "power": 1
+    },
+    "requirements": [
+        "lead/80",
+        "silicon/50",
+        "titanium/25",
+        "晶栅/20"
+    ],
+    "research": "基础卸载器",
+    "category": "distribution"
+}

@@ -1,0 +1,66 @@
+{
+    "type": "naval",
+    "name": "置放",
+    "description":"标准护卫舰，附近的敌人发射小型穿甲弹。",
+    "immunities": [
+        "wet",
+        "corroded"
+    ],
+    "speed": 1.247,
+    "rotateSpeed": 3.6,
+    "trailLength": 26,
+    "waveTrailX": 2.75,
+    "waveTrailY": -7,
+    "trailScl": 1.6,
+    "hitSize": 12,
+    "lightRadius": 46,
+    "fogRadius": 28,
+    "health": 300,
+    "armor": 2,
+    "faceTarget": false,
+    "research": {
+        "parent": "空A",
+        "requirements": [
+            "lead/500",
+            "silicon/1500",
+            "metaglass/1000"
+        ]
+    },
+    "requirements": {
+		"block": "naval-factory",
+		"time": 2400,
+		"requirements": ["lead/15","silicon/35","metaglass/30"]},
+    "weapons": [
+        {
+            "name": "置放1",
+            "x": 0,
+            "y": -2.25,
+            "mirror":false,
+            "shootX": 0,
+            "shootY": 4,
+            "shoot": {
+                "type": "ShootAlternate",
+                "shots": 2,
+                "barrels": 2,
+                "shotDelay": 5
+            },
+            "reload": 25.6,
+            "rotate": true,
+            "rotateSpeed": 7.5,
+            "ejectEffect": "none",
+            "bullet": {
+                "lifetime": 26,
+                "speed": 8,
+                "backColor": "b9c7f0",
+                "frontColor": "ffffff",
+                "homingRange": 32,
+                "homingPower": 0.01,
+                "shootEffect": "shootSmall",
+                "smokeEffect": "shootSmallSmoke",
+                "damage": 20,
+                "width": 5,
+                "height": 9
+            }
+        }
+    ]
+}

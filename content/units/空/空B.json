@@ -1,0 +1,140 @@
+{
+    "type": "flying",
+    "name": "黎阳",
+    "description": "向敌人发射穿透激光与小型能量爆破弹。",
+    "details": "“有时以低防御为代价，换取高额DPS是个明智的选择”",
+    "speed": 3.285,
+    "drag": 0.06,
+    "accel": 0.09,
+    "rotateSpeed": 8,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 2000
+    },
+    "ammoCapacity": 100,
+    "hitSize": 11,
+    "flying": true,
+    "faceTarget": true,
+    "health": 320,
+    "armor": 2,
+    "lightRadius": 40,
+    "fogRadius": 20,
+    "engineOffset": 7,
+    "engineSize": 2.85,
+    "buildSpeed": 0.5,
+    "buildRange": 160,
+    "itemCapacity": 20,
+    "immunities": [
+        "burning",
+        "corroded"
+    ],
+    "research": {
+        "parent": "空A",
+        "requirements": [
+            "graphite/1800",
+            "silicon/1800",
+            "titanium/500"
+        ]
+    },
+    "requirements": {
+        "block": "TierB特种重构厂",
+        "previous": "空A"
+    },
+    "weapons": [
+        {
+            "name": "黎阳激光",
+            "x": 0,
+            "y": 0,
+            "shootY": 0.75,
+            "reload": 28,
+            "rotate": false,
+            "mirror": false,
+            "shootSound": "laser",
+            "continuous": true,
+            "bullet": {
+                "type": "LaserBulletType",
+                "damage": 16,
+                "sideAngle": 135,
+                "sideWidth": 1,
+                "sideLength": 28,
+                "width": 12,
+                "length": 180,
+                "pierceCap": 7,
+                "colors": [
+                    "88a8e3C8",
+                    "b9c7f0C8",
+                    "FFFFFFC8"
+                ],
+                "shootEffect": "shockwave"
+            }
+        },
+        {
+            "name": "黎阳1",
+            "x": 4,
+            "y": 0.5,
+            "reload": 18.5,
+            "shootCone": 22.5,
+            "shootSound": "missile",
+            "mirror": true,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 2.5
+            },
+            "bullet": {
+                "damage": 6,
+                "sprite": "circle-bullet",
+                "shrinkY": 0,
+                "frontColor": "FFFFFF",
+                "backColor": "b9c7f0",
+                "splashDamageRadius": 19,
+                "splashDamage": 16,
+                "incendAmount": 1,
+                "incendSpread": 22,
+                "incendChance": 0.15,
+                "homingRange": 26,
+                "homingDelay": 5,
+                "homingPower": 0.06,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 20,
+                            "sizeFrom": 1,
+                            "sizeTo": 19,
+                            "strokeFrom": 8,
+                            "strokeTo": 0,
+                            "colorFrom": "ffffff",
+                            "colorTo": "b9c7f0"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 7,
+                            "line": true,
+                            "strokeFrom": 1.5,
+                            "strokeTo": 1.5,
+                            "lenFrom": 10,
+                            "lenTo": 0,
+                            "length": 22,
+                            "baseLength": 10,
+                            "lifetime": 18,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "b9c7f0",
+                            "cone": 360
+                        }
+                    ]
+                },
+                "despawnEffect": "none",
+                "width": 4,
+                "height": 4.5,
+                "trailLength": 2,
+                "trailWidth": 2,
+                "trailColor": "c0ecff",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "speed": 6,
+                "lifetime": 25
+            }
+        }
+    ]
+}

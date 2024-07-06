@@ -1,0 +1,93 @@
+{
+	"type": "mech",
+	"name": "星尘",
+	"description": "向附近的敌人发射穿透性的削弱激光。",
+	"details": "它的强大令敌人闻风丧胆，它的速度令敌人望而却步。",
+	"canBoost": true,
+	"immunities": [
+		"burning",
+		"spore-slowed",
+		"corroded"
+	],
+	"speed": 1.248,
+	"engineOffset": 6,
+	"engineSize": 2.75,
+	"hitSize": 10.8,
+	"health": 400,
+	"armor": 4,
+	"healFlash": false,
+	"lightRadius": 48.6,
+	"fogRadius": 22,
+	"buildRange": 288,
+	"maxRange": 176,
+	"mineSpeed": 3,
+	"mineTier": 2,
+	"buildSpeed": 0.75,
+	"rotateSpeed": 8,
+	"itemCapacity": 30,
+	"boostMultiplier": 3.2,
+	"research": {
+		"parent": "陆星A",
+		"requirements": [
+			"lead/1000",
+			"graphite/1800",
+			"silicon/1800",
+			"titanium/500"
+		]
+	},
+	"requirements": {
+		"block": "TierB特种重构厂",
+		"previous": "陆星A"
+	},
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 2000
+	},
+	"ammoCapacity": 200,
+	"weapons": [
+		{
+			"name": "星尘1",
+			"top": false,
+			"shake": 0.8,
+			"shootY": 2,
+			"shootX": 0,
+			"x": 6.25,
+			"y": 0.25,
+			"shoot": {
+				"type": "ShootAlternate",
+				"shots": 2,
+				"barrels": 1,
+				"shotDelay": 5
+			},
+			"reload": 23.5,
+			"shootSound": "laser",
+			"inaccuracy": 0,
+			"rotate": false,
+			"alternate": false,
+			"bullet": {
+				"type": "LaserBulletType",
+				"damage": 14,
+				"sideAngle": 25,
+				"sideWidth": 1.5,
+				"sideLength": 18,
+				"width": 12,
+				"length": 180,
+				"pierceCap": 7,
+				"status": "扰频",
+				"statusDuration": 360,
+				"colors": [
+					"88a8e3C8",
+					"b9c7f0C8",
+					"FFFFFFC8"
+				],
+				"shootEffect": "shockwave"
+			}
+		}
+	],
+	"abilities": [
+		{
+			"type": "RegenAbility",
+			"amount": 0.2
+		}
+	]
+}

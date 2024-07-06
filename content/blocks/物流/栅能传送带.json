@@ -1,0 +1,25 @@
+{
+	"type": "Conveyor",
+	"name": "栅能传送带",
+	"description":"消耗电力向前方快速传输物品，断电后无法工作。\n可以放置在深水上。\n[red]被摧毁后引发爆炸。",
+	"details":"切记远离伽马的EMP副武器！能够无视对建筑伤害倍率直接对它造成高额伤害！",
+	"health": 95,
+	"armor":1,
+	"baseExplosiveness": 10,
+	"buildCostMultiplier":0.6,
+	"placeableLiquid": true,
+	"requirements": [
+		"lead/2",
+		"silicon/2",
+		"titanium/1",
+		"晶栅/1"
+	],
+	"consumes": {
+		"power": 0.02
+	},
+	"conductivePower":true,
+	"category": "distribution",
+	"research":"栅格传送带",
+	"speed": 0.3,
+	"displayedSpeed": 30
+}

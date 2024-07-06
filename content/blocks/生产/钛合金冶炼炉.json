@@ -1,0 +1,21 @@
+{
+    "type": "GenericCrafter",
+    "name": "钛合金冶炼炉",
+    "description":"将钛，钍熔炼为钛合金",
+    "details":"“这么大一个炉子，生产效率一定很高吧？”",
+    "outputItems":["钛合金/1"],
+    "health": 640,
+    "size": 3,
+    "itemCapacity": 30,
+    "hasPower": true,
+    "hasLiquids": false,
+    "hasItems": true,
+    "craftTime": 60,
+    "updateEffect": "none",
+    "drawer": {"type": "DrawMulti","drawers":[{"type":"DrawDefault"},
+    {"type":"DrawFlame","flameRadius":5.4,"flameRadiusIn":2.4}]},
+    "consumes": {"power": 3,"items": {"items":["titanium/3","thorium/1"]}},
+    "requirements": ["lead/150","silicon/90","thorium/80","晶栅/40"],
+    "category": "crafting",
+    "research": "晶栅编织器"
+}

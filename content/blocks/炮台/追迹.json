@@ -1,0 +1,98 @@
+{
+	"type": "ItemTurret",
+	"name": "追迹",
+	"description": "基础炮台。向敌人发射小型追踪弹并造成击退效果。",
+	"details": "“不要小看铜铅科技的力量！”",
+	"size": 1,
+	"health": 320,
+	"range": 120,
+	"reload": 18,
+	"inaccuracy": 0,
+	"rotateSpeed": 15,
+	"maxAmmo": 40,
+	"targetAir": true,
+	"targetGround": true,
+	"hasLiquids": true,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"coolantMultiplier": 10,
+	"shootCone": 6,
+	"ammoTypes": {
+		"copper": {
+			"speed": 4.25,
+			"damage": 10,
+			"knockback": 0.4,
+			"lifetime": 30,
+			"width": 6,
+			"height": 9,
+			"homingRange": 24,
+			"homingPower": 0.02,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+		},
+		"pyratite": {
+			"speed": 4.8,
+			"damage": 16,
+			"splashDamageRadius": 22,
+			"splashDamage": 12,
+			"knockback": 0.8,
+			"status": "burning",
+			"statusDuration": 480,
+			"lifetime": 27,
+			"backColor": "FF8C00",
+			"frontColor": "FFB90F",
+			"width": 6.5,
+			"height": 9.5,
+			"homingRange": 32,
+			"homingPower": 0.025,
+			"ammoMultiplier": 4,
+			"shootEffect": "shootSmall"
+		},
+		"silicon": {
+			"speed": 4.8,
+			"damage": 14,
+			"knockback": 0.6,
+			"reloadMultiplier": 1.6,
+			"lifetime": 27,
+			"width": 6,
+			"height": 9.5,
+			"shootEffect": "shootSmall",
+			"homingRange": 48,
+			"homingPower": 0.12,
+			"ammoMultiplier": 5
+		},
+		"graphite": {
+			"speed": 4.8,
+			"damage": 20,
+			"knockback": 1,
+			"reloadMultiplier": 0.7,
+			"lifetime": 27,
+			"width": 6.5,
+			"height": 11,
+			"homingRange": 32,
+			"homingPower": 0.025,
+			"ammoMultiplier": 4,
+			"shootEffect": "shootSmall"
+		}
+	},
+	"requirements": [
+		"copper/25",
+		"lead/20"
+	],
+	"buildCostMultiplier": 0.73,
+	"research": {
+		"parent": "晶栅",
+		"requirements": [],
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "ShanGu"
+			}
+		]
+	},
+	"category": "turret"
+}

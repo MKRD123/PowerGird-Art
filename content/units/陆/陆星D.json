@@ -1,0 +1,151 @@
+{
+	"type": "mech",
+	"description": "向敌人发射大型能量爆破弹。",
+	"details": "星核的高机动性与不俗的辅助能力使它成为了群体作战的常客，专精于对群的武器也成为了依赖过大墙体防线的大麻烦，然而能量爆破弹对于护盾的威力实在过于低下，这也是我们唯一能够在前期解决它的方法。",
+	"name": "星核",
+	"canBoost": true,
+	"immunities": [
+		"burning",
+		"wet",
+		"spore-slowed",
+		"tarred",
+		"corroded"
+	],
+	"dpsEstimate": 705.6,
+	"speed": 0.71,
+	"hitSize": 24,
+	"health": 7800,
+	"armor": 12,
+	"engineOffset": 8,
+	"engineSize": 7.5,
+	"lightRadius": 88,
+	"fogRadius": 36.75,
+	"buildRange": 360,
+	"maxRange": 294,
+	"mineSpeed": 16,
+	"mineTier": 8,
+	"buildSpeed": 3.6,
+	"rotateSpeed": 4.8,
+	"itemCapacity": 160,
+	"boostMultiplier": 2.4,
+	"research": {
+		"parent": "陆星C",
+		"requirements": [
+			"silicon/16000",
+			"titanium/1000",
+			"晶栅/9000",
+			"plastanium/8000"
+		]
+	},
+	"drownTimeMultiplier": 6,
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 14400
+	},
+	"ammoCapacity": 144,
+	"weapons": [
+		{
+			"name": "星核1",
+			"x": 17.75,
+			"y": 0,
+			"top": false,
+			"shootX": 0,
+			"shootY": 13.5,
+			"shoot": {
+				"type": "ShootAlternate",
+				"shots": 3,
+				"barrels": 1,
+				"shotDelay": 2
+			},
+			"reload": 25,
+			"shootCone": 20,
+			"inaccuracy": 6,
+			"rotate": false,
+			"ejectEffect": "none",
+			"bullet": {
+				"width": 9,
+				"height": 16,
+				"speed": 14,
+				"lifetime": 19.7,
+				"hitSize": 8,
+				"damage": 28,
+				"splashDamage": 70,
+				"splashDamageRadius": 45,
+				"status": "扰频",
+				"statusDuration": 300,
+				"backColor": "b9c7f0",
+				"frontColor": "ffffff",
+				"trailColor": "b9c7f0",
+				"trailLength": 7.5,
+				"trailWidth": 2,
+				"shootEffect": "shootBig",
+				"smokeEffect": "shootBigSmoke",
+				"hitEffect": {
+					"type": "WrapEffect",
+					"effect": "dynamicSpikes",
+					"color": "b9c7f0",
+					"rotation": 45
+				},
+				"despawnEffect": "none",
+				"hitSound": "plasmaboom",
+				"spawnBullets": [
+					{
+						"type": "RailBulletType",
+						"damage": 24,
+						"pierce": true,
+						"pierceBuilding": true,
+						"pierceEffect": {
+							"type": "ParticleEffect",
+							"particles": 3,
+							"region": "pga-空心菱形",
+							"sizeFrom": 6,
+							"sizeTo": 1,
+							"length": 22,
+							"baseLength": 4,
+							"lifetime": 48,
+							"spin": 3,
+							"colorFrom": "b9c7f090",
+							"colorTo": "ffffff"
+						},
+						"pointEffect": {
+							"type": "ParticleEffect",
+							"particles": 1,
+							"region": "pga-空心菱形",
+							"sizeFrom": 6,
+							"sizeTo": 1,
+							"length": 12,
+							"baseLength": 3,
+							"lifetime": 48,
+							"spin": 3,
+							"colorFrom": "b9c7f090",
+							"colorTo": "ffffff"
+						},
+						"hitEffect": "none",
+						"pierceDamageFactor": 0.01,
+						"length": 180,
+						"despawnEffect": "none"
+					}
+				]
+			}
+		}
+	],
+	"abilities": [
+		{
+			"type": "ShieldArcAbility",
+			"radius": 30,
+			"angle": 361,
+			"width": 7.2,
+			"max": 1200,
+			"regen": 1.8,
+			"cooldown": 600,
+			"angleOffset": 0,
+			"whenShooting": "false"
+		},
+		{
+			"type": "RepairFieldAbility",
+			"amount": 270,
+			"reload": 300,
+			"range": 80
+		}
+	]
+}

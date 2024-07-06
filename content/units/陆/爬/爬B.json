@@ -1,0 +1,73 @@
+{
+	"type": "legs",
+	"name": "鞍马",
+	"description": "向附近的敌人发射汲取光束，对建筑造成更高伤害。",
+	"armor": 5,
+	"speed": 0.58,
+	"rotateSpeed": 3.6,
+	"itemCapacity": 30,
+	"hitSize": 12,
+	"health": 540,
+	"targetAir": false,
+	"targetGround": true,
+	"legCount": 4,
+	"legLength": 14,
+	"lockLegBase": true,
+	"legContinuousMove": true,
+	"legExtension": -3,
+	"legBaseOffset": 3.25,
+	"legMaxLength": 1.1,
+	"legMinLength": 0.2,
+	"legLengthScl": 0.96,
+	"legForwardScl": 1.1,
+	"legGroupSize": 3,
+	"rippleScale": 0.2,
+	"allowLegStep": true,
+	"research": {
+		"parent": "爬A",
+		"requirements": [
+			"lead/1000",
+			"graphite/1800",
+			"silicon/1800",
+			"titanium/500"
+		]
+	},
+	"requirements": {
+		"block": "TierB特种重构厂",
+		"previous": "爬A"
+	},
+	"weapons": [
+		{
+			"name": "鞍马1",
+			"x": 5.75,
+			"y": 0,
+			"top": false,
+			"shootY": 5,
+			"shootX": 0,
+			"reload": 22,
+			"shoot": {
+				"shots": 3,
+				"shotDelay": 1
+			},
+			"inaccuracy": 5,
+			"shootSound": "sap",
+			"mirror": true,
+			"bullet": {
+				"type": "SapBulletType",
+				"shootEffect": "shootSmall",
+				"lifetime": 24,
+				"sapStrength": 0.6,
+				"buildingDamageMultiplier": 1.5,
+				"length": 70,
+				"width": 0.45,
+				"knockback": -0.6,
+				"status": "none",
+				"damage": 18,
+				"color": "FEEBB3",
+				"lightColor": "FEEBB3",
+				"hitColor": "FEEBB3",
+				"despawnEffect": "none"
+			}
+		}
+	]
+}

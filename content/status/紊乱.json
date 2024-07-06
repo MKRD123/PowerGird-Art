@@ -1,0 +1,10 @@
+{
+    "name": "紊乱",
+    "damageMultiplier":0.7,
+    "reloadMultiplier":1.8,
+    "healthMultiplier": 0.85,
+    "speedMultiplier": 0.46,
+    "damage": 3.3334,
+    "effectChance": 0.3,
+    "effect": "none"
+}

@@ -1,0 +1,27 @@
+{
+	"name": "冷冻液地探机",
+	"type": "SolidPump",
+	"description":"以高造价与高耗能为代价，从地下提取冷冻液。\n若地下无冷冻液，则转变为自动挖掘钛并合成冷冻液模式，通常情况下地下温度越高，效率越低；地下水越多，效率越高。",
+	"details":"你怎么知道这里有冷冻液的？",
+	"health": 90,
+	"size": 1,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 15,
+	"requirements": [
+		"titanium/25",
+		"silicon/20",
+		"metaglass/30",
+		"晶栅/20"
+	],
+	"consumes": {
+		"power": 0.7
+	},
+	"pumpAmount": 0.06,
+	"rotateSpeed": 1,
+	"result": "cryofluid",
+	"baseEfficiency": 1,
+	"attribute": "water",
+	"category": "production",
+	"research": "大型气动钻机"
+}

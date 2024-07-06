@@ -1,0 +1,26 @@
+{
+	"type": "TractorBeamTurret",
+	"name": "诚邀",
+	"description":"大型牵引装置，拥有更强的牵引力。",
+	"details":"Surprise！",
+	"health": 2265,
+	"size": 3,
+	"rotateSpeed": 12,
+	"range": 294,
+	"scaledForce": 6,
+	"force": 75,
+	"targetGround": false,
+	"targetAir": true,
+	"hasPower": true,
+	"damage": 2.4,
+	"consumes": {
+		"power": 10
+	},
+	"requirements": [
+		"titanium/150",
+		"silicon/180",
+		"plastanium/85"
+	],
+	"category": "turret",
+	"research": "长空"
+}

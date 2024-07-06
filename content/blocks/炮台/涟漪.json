@@ -1,0 +1,53 @@
+{
+    "type": "LiquidTurret",
+    "name": "涟漪",
+    "description": "短距高效灭火器。需要电力启动。",
+    "health": 450,
+    "size": 1,
+    "shoot": {
+        "shots": 3,
+        "shotDelay": 5
+    },
+    "reload": 9,
+    "range": 80,
+    "recoilTime": 10,
+    "recoil": 1,
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 5,
+    "rotateSpeed": 15,
+    "velocityRnd": 0.1,
+    "consumes": {
+        "power": 0.2
+    },
+    "liquidCapacity": 45,
+    "ammoTypes": {
+        "water": {
+            "type": "LiquidBulletType",
+            "shootEffect": "none",
+            "liquid": "water",
+            "statusDuration": 90,
+            "status": "wet",
+            "knockback": 0.45,
+            "drag": 0.018,
+            "layer": 98
+        },
+        "cryofluid": {
+            "type": "LiquidBulletType",
+            "liquid": "cryofluid",
+            "damage": 0.2,
+            "status": "freezing",
+            "statusDuration": 90,
+            "knockback": 0.3,
+            "drag": 0.018
+        }
+    },
+    "requirements": [
+        "lead/40",
+        "metaglass/20",
+        "silicon/15",
+        "晶栅/5"
+    ],
+    "category": "turret",
+    "research": "追迹"
+}

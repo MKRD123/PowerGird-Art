@@ -1,0 +1,41 @@
+{
+	"name": "大型机械钻机",
+	"type": "Drill",
+	"description": "大型钻机。拥有比小型机械钻头更高的挖掘速度。",
+	"size": 3,
+	"health": 385,
+	"tier": 2,
+	"drillTime": 500,
+	"liquidBoostIntensity": 1.6,
+	"canOverdrive": true,
+	"warmupSpeed": 0.02,
+	"drillEffect": "mineBig",
+	"updateEffect": "mineBig",
+	"rotateSpeed": 2,
+	"drawMineItem": true,
+	"consumes": {
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.08,
+			"booster": true,
+			"optional": true
+		}
+	},
+	"itemCapacity": 20,
+	"liquidCapacity": 10,
+	"requirements": [
+		"copper/32",
+		"lead/24"
+	],
+	"category": "production",
+	"research": {
+		"parent": "晶栅",
+		"requirements": [],
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "ShanGu"
+			}
+		]
+	}
+}
